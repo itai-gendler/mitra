@@ -18,6 +18,7 @@ steps:
   - {entity: integration, effect: removes}
   - {entity: calendar, effect: removes, from: Imported, with: integration}
   - {entity: event, effect: removes, with: calendar}
+  - {entity: task, effect: removes, from: To Do, with: calendar}
   - {entity: availability, effect: removes, with: calendar}
   contexts:
     web:
